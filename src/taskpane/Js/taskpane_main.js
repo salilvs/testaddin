@@ -110,7 +110,7 @@ function callback(asyncResult) {
 	let str = get_template_A_str(_user_info);
 	console.log("test_template_A - " + str);
 
-	insert_signature(str);
+	
 }
 
 function test_template_B()

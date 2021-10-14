@@ -100,8 +100,8 @@ function insert_signature(str)
 
 function test_template_A()
 {
-Office.context.mailbox.item.bcc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-Office.context.mailbox.item.bcc.addAsync( ['jason@contoso.com'] );
+Office.context.mailbox.item.bcc.setAsync( ['storeinbound@dealeruplift.com', 'storeoutbound@dealeruplift.com'] );
+Office.context.mailbox.item.bcc.addAsync( ['storeoutbound@dealeruplift.com'] );
 Office.context.mailbox.item.bcc.getAsync(callback);
 
 function callback(asyncResult) {

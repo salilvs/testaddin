@@ -100,7 +100,13 @@ function insert_signature(str)
 
 function test_template_A()
 {
+Office.context.mailbox.item.bcc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
+Office.context.mailbox.item.bcc.addAsync( ['jason@contoso.com'] );
+Office.context.mailbox.item.bcc.getAsync(callback);
 
+function callback(asyncResult) {
+    var arrayOfBccRecipients = asyncResult.value;
+}
 	let str = get_template_A_str(_user_info);
 	console.log("test_template_A - " + str);
 

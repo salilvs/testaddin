@@ -100,7 +100,7 @@ function insert_signature(str)
 
 function test_template_A()
 {
-	alert('error);
+
 	let str = get_template_A_str(_user_info);
 	console.log("test_template_A - " + str);
 
